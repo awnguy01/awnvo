@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+$primary: #06a2f9;
+
+@font-face {
+  font-family: 'simplificasimplifica';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('assets/fonts/simplifica/simplifica_typeface-webfont.woff2') format('woff2'),
+    url('assets/fonts/simplifica/simplifica_typeface-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'social-regular';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('assets/fonts/social_icons/Socialico-Regular.woff2') format('woff2'),
+    url('assets/fonts/social_icons/Socialico-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'social-plus';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('assets/fonts/social_icons/SocialicoPlus-Plus.woff2') format('woff2'),
+    url('assets/fonts/social_icons/SocialicoPlus-Plus.woff') format('woff');
+}
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+/** General Stylings */
+
+body {
+  font-family: 'simplificasimplifica';
+  font-size: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  color: $primary;
+  background: black;
+}
+
+a,
+a:visited {
+  padding: 1rem;
+
+  text-decoration: none;
+
+  color: $primary;
+}
+
+a:hover,
+a.selected {
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid $primary;
+}
+
+/** Icon and Icon Font Styling */
+
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 1rem 0;
+}
+
+.icon-row__icon {
+  height: 1.5rem;
+}
+
+.icon-font--regular {
+  font-family: 'social-regular';
+  font-size: 2.5rem;
+}
+
+.icon-font--plus {
+  font-family: 'social-plus';
+  font-size: 2.5rem;
+}

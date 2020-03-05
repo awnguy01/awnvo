@@ -1,0 +1,124 @@
+$primary: #06a2f9;
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+:host {
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 5rem;
+  padding: 1rem;
+}
+
+.home svg {
+  position: absolute;
+}
+
+.home svg rect {
+  animation: draw 2s linear forwards;
+  fill: none;
+  stroke: $primary;
+  stroke-width: 4;
+}
+
+.home__header {
+  display: flex;
+}
+
+.home__i-beam {
+  height: 2.15rem;
+  border: none;
+  border-left: 1px solid $primary;
+}
+
+.home h1 {
+  font-weight: normal;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 1rem;
+  white-space: nowrap;
+}
+
+.home__divider {
+  width: 50vw;
+  border: 1px solid $primary;
+}
+
+.home__traits {
+  display: flex;
+  justify-content: center;
+}
+
+.home__traits img {
+  color: $primary;
+}
+
+.home__traits span {
+  margin: 0 1rem;
+  transform: translateY(-20px);
+  animation: fadeInDown 500ms linear 1.75s 1 forwards;
+  text-align: center;
+  opacity: 0;
+}
+
+/** Tablet Styling */
+
+@media screen and (max-width: 768px) {
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home__divider {
+    width: 100%;
+  }
+}
+
+/** Mobile Styling */
+
+@media screen and (max-width: 425px) {
+  .home {
+    margin: 1rem;
+  }
+
+  .home__traits {
+    line-height: 3rem;
+    flex-direction: column;
+  }
+
+  .home__traits span {
+    transform: translateY(0);
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/** IE10+ Styles */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  main.home {
+    border: 1px solid $primary;
+  }
+}
