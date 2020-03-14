@@ -1,0 +1,44 @@
+.uses {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    &--outer {
+      padding-left: 0;
+    }
+  }
+
+  &__section {
+    padding: 0 2rem;
+    text-align: justify;
+    h1 {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__link {
+    padding: 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/** Mobile Styling */
+
+@media screen and (max-width: 768px) {
+  .uses {
+    &__link {
+      text-decoration: underline;
+    }
+  }
+}
