@@ -7,7 +7,11 @@ const PORTFOLIO_CARDS = [
     desc: 'Global and US tracker for COVID-19 related cases.',
     previewImgSrc: 'assets/images/virwatch_site_preview.png',
     iconTags: ['assets/images/netlify_logo.png', 'assets/images/vue_logo.png'],
-    using: ['ChartJS', 'randomcolor', 'comma-separated-values']
+    using: [
+      'ChartJS',
+      'randomcolor by David Merfield',
+      'comma-separated-values by Kash Nouroozi'
+    ]
   }
 ];
 
