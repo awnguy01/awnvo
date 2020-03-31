@@ -1,47 +1,6 @@
+@import '~src/styles/fonts.scss';
 @import '~src/styles/colors';
 @import '~src/styles/keyframes.scss';
-
-@font-face {
-  font-family: 'simplificasimplifica';
-  font-weight: normal;
-  font-style: normal;
-
-  src: url('assets/fonts/simplifica/simplifica_typeface-webfont.woff2')
-      format('woff2'),
-    url('assets/fonts/simplifica/simplifica_typeface-webfont.woff')
-      format('woff');
-}
-
-@font-face {
-  font-family: 'social-regular';
-  font-weight: normal;
-  font-style: normal;
-
-  src: url('assets/fonts/social_icons/Socialico-Regular.woff2') format('woff2'),
-    url('assets/fonts/social_icons/Socialico-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'social-plus';
-  font-weight: normal;
-  font-style: normal;
-
-  src: url('assets/fonts/social_icons/SocialicoPlus-Plus.woff2') format('woff2'),
-    url('assets/fonts/social_icons/SocialicoPlus-Plus.woff') format('woff');
-}
-
-@keyframes fadeInDown {
-  0% {
-    transform: translateY(-20px);
-
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-
-    opacity: 1;
-  }
-}
 
 /** General Stylings */
 
