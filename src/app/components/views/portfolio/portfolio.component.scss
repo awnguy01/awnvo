@@ -1,5 +1,11 @@
 @import '~src/styles/colors.scss';
 
+@for $index from 0 to 100 {
+  .portfolio__card-link:nth-child(#{$index + 1}) {
+    animation-delay: #{$index * 0.5}s;
+  }
+}
+
 :host {
   display: flex;
   align-items: center;
@@ -21,6 +27,8 @@
   }
   &__card-link {
     padding: 0;
+    animation: fadeInDown 500ms linear 500ms 1 forwards;
+
     &:hover {
       font-weight: normal;
     }
