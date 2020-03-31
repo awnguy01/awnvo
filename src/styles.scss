@@ -1,12 +1,14 @@
-$primary: #06a2f9;
+@import '~src/styles/colors';
 
 @font-face {
   font-family: 'simplificasimplifica';
   font-weight: normal;
   font-style: normal;
 
-  src: url('assets/fonts/simplifica/simplifica_typeface-webfont.woff2') format('woff2'),
-    url('assets/fonts/simplifica/simplifica_typeface-webfont.woff') format('woff');
+  src: url('assets/fonts/simplifica/simplifica_typeface-webfont.woff2')
+      format('woff2'),
+    url('assets/fonts/simplifica/simplifica_typeface-webfont.woff')
+      format('woff');
 }
 
 @font-face {
@@ -53,8 +55,8 @@ body {
   height: 100vh;
   margin: 0;
 
-  color: $primary;
-  background: black;
+  color: $primaryColor;
+  background: $backgroundColor;
 }
 
 a,
@@ -63,7 +65,7 @@ a:visited {
 
   text-decoration: none;
 
-  color: $primary;
+  color: $primaryColor;
 }
 
 a:hover,
@@ -72,7 +74,7 @@ a.selected {
 }
 
 hr {
-  border: 1px solid $primary;
+  border: 1px solid $primaryColor;
 }
 
 /** Icon and Icon Font Styling */

@@ -1,4 +1,4 @@
-$primary: #06a2f9;
+@import '~src/styles/colors.scss';
 
 @keyframes fadeInDown {
   0% {
@@ -41,7 +41,7 @@ $primary: #06a2f9;
 .home svg rect {
   animation: draw 2s linear forwards;
   fill: none;
-  stroke: $primary;
+  stroke: $primaryColor;
   stroke-width: 4;
 }
 
@@ -52,7 +52,7 @@ $primary: #06a2f9;
 .home__i-beam {
   height: 2.15rem;
   border: none;
-  border-left: 1px solid $primary;
+  border-left: 1px solid $primaryColor;
 }
 
 .home h1 {
@@ -65,7 +65,7 @@ $primary: #06a2f9;
 
 .home__divider {
   width: 50vw;
-  border: 1px solid $primary;
+  border: 1px solid $primaryColor;
 }
 
 .home__traits {
@@ -74,7 +74,7 @@ $primary: #06a2f9;
 }
 
 .home__traits img {
-  color: $primary;
+  color: $primaryColor;
 }
 
 .home__traits span {
@@ -119,6 +119,6 @@ $primary: #06a2f9;
 /** IE10+ Styles */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   main.home {
-    border: 1px solid $primary;
+    border: 1px solid $primaryColor;
   }
 }
