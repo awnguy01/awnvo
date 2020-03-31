@@ -22,13 +22,13 @@
     padding: 1rem;
     img {
       width: 1.5rem;
+      height: 1.5rem;
       margin-right: 0.5rem;
     }
   }
   &__card-link {
     padding: 0;
     animation: fadeInDown 500ms linear 500ms 1 forwards;
-
     &:hover {
       font-weight: normal;
     }
