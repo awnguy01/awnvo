@@ -1,0 +1,83 @@
+@import '~src/styles/colors.scss';
+
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio {
+  &__icon-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 1rem;
+    img {
+      width: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+  &__card-link {
+    padding: 0;
+    &:hover {
+      font-weight: normal;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid $primaryColor;
+    a {
+      padding: 1rem 0;
+    }
+    &-content {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 1rem;
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+    &-footer {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      border-top: 1px solid $primaryColor;
+    }
+    &:hover {
+      cursor: pointer;
+      a {
+        text-decoration: underline;
+      }
+      &::after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        opacity: 0.25;
+        background-color: darken($primaryColor, 25%);
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 1.5rem;
+  }
+
+  &__previewer {
+    height: 10rem;
+    margin-left: 1rem;
+    img {
+      height: 100%;
+    }
+  }
+}

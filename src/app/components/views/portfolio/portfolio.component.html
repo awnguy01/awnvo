@@ -1,0 +1,27 @@
+<a *ngFor="let workItem of worksList" [href]="workItem.url" target="_blank" class="portfolio__card-link">
+    <section class="portfolio__card">
+        <div class="portfolio__icon-row">
+            <img *ngFor="let iconSrc of workItem.iconTags" [src]="iconSrc">
+        </div>
+        <div class="portfolio__card-content">
+            <div>
+                <h1>{{ workItem.title }}</h1>
+                <span>{{ workItem.url }}</span>
+                <p class="portfolio__desc">{{ workItem.desc }}</p>
+            </div>
+            <div class="portfolio__previewer">
+                <img [src]="workItem.previewImgSrc">
+            </div>
+        </div>
+
+        <footer class="portfolio__card-footer">
+            <span>
+                Using&nbsp;
+                <ng-container *ngFor="let item of workItem.using; let i = index;">
+                    <ng-container *ngIf="i">+&nbsp;</ng-container>
+                    {{ item }}
+                </ng-container>
+            </span>
+        </footer>
+    </section>
+</a>
