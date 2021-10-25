@@ -5,8 +5,6 @@ import { take } from 'rxjs/operators';
 const HEADER = 'Andrew Nguyen Vo';
 const TYPE_SPEED = 100;
 
-const VIEW_CHILD_OPTS = { read: ElementRef, static: true };
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,16 +13,16 @@ const VIEW_CHILD_OPTS = { read: ElementRef, static: true };
 export class HomeComponent implements OnInit {
   headerText = '';
 
-  @ViewChild('container', VIEW_CHILD_OPTS)
+  @ViewChild('container', { read: ElementRef, static: true })
   containerEl: ElementRef;
 
-  @ViewChild('iBeam', VIEW_CHILD_OPTS)
+  @ViewChild('iBeam', { read: ElementRef, static: true })
   iBeamEl: ElementRef;
 
-  @ViewChild('borderSvg', VIEW_CHILD_OPTS)
+  @ViewChild('borderSvg', { read: ElementRef, static: true })
   borderSvgEl: ElementRef;
 
-  @ViewChild('borderRect', VIEW_CHILD_OPTS)
+  @ViewChild('borderRect', { read: ElementRef, static: true })
   borderRectEl: ElementRef;
 
   constructor() {}

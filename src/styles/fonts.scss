@@ -2,9 +2,9 @@
   font-family: 'simplificasimplifica';
   font-weight: normal;
   font-style: normal;
-  src: url('assets/fonts/simplifica/simplifica_typeface-webfont.woff2')
+  src: url('../assets/fonts/simplifica/simplifica_typeface-webfont.woff2')
       format('woff2'),
-    url('assets/fonts/simplifica/simplifica_typeface-webfont.woff')
+    url('../assets/fonts/simplifica/simplifica_typeface-webfont.woff')
       format('woff');
 }
 
@@ -12,14 +12,14 @@
   font-family: 'social-regular';
   font-weight: normal;
   font-style: normal;
-  src: url('assets/fonts/social_icons/Socialico-Regular.woff2') format('woff2'),
-    url('assets/fonts/social_icons/Socialico-Regular.woff') format('woff');
+  src: url('../assets/fonts/social_icons/Socialico-Regular.woff2') format('woff2'),
+    url('../assets/fonts/social_icons/Socialico-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'social-plus';
   font-weight: normal;
   font-style: normal;
-  src: url('assets/fonts/social_icons/SocialicoPlus-Plus.woff2') format('woff2'),
-    url('assets/fonts/social_icons/SocialicoPlus-Plus.woff') format('woff');
+  src: url('../assets/fonts/social_icons/SocialicoPlus-Plus.woff2') format('woff2'),
+    url('../assets/fonts/social_icons/SocialicoPlus-Plus.woff') format('woff');
 }
